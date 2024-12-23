@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Artist Homepage</title>
+    <link rel="stylesheet" href="/static/artist_homepage.css">
+</head>
+
+<body>
+    <a href="{{ url_for('homepage') }}"><img class="home-button" src="/static/images/home button.png"></a>
+      <h1 class="name">Home Page</h1>
+
+    <div class="container">
+        <div class="left-sidebar-bg">
+            <image class="library-image" src="/static/images/library.png"></image>
+          <div class="library-text">Your Library</div>
+
+          <div class="lab-art-container">
+            <div class="activities-text"><a href="{{ url_for('homepage') }}">Lab Activities</a></div>
+            <div class="selected-lab-art"><a href="#">Artists</a></div>
+          </div>
+          
+            <div class="left-container">
+                <div class="vertical-container">
+                    <div class="item">
+                        <img class="image" src="/static/images/daniel.png" alt="Daniel">
+                        <a href="{{ url_for('daniel') }}" class="artist">Daniel Reign Cosare</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/april.png" alt="April">
+                        <a href="{{ url_for('april') }}" class="artist">April Mae S. Salangsang</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/celine.png" alt="Celine">
+                        <a href="{{ url_for('celine') }}" class="artist">Celine Rose S. Paguio</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/jam.png" alt="Jamaica">
+                        <a href="{{ url_for('jamaica') }}" class="artist">Jamaica C. Palillo</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/owenn.png" alt="Godwin">
+                        <a href="{{ url_for('godwin') }}" class="artist">Godwin Anton M. Mahaba</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/jester.png" alt="Jester">
+                        <a href="{{ url_for('jester') }}" class="artist">Jester Carl C. Tiedra</a>
+                    </div>
+                    <div class="item">
+                        <img class="image" src="/static/images/glenn.png" alt="Glenn">
+                        <a href="{{ url_for('glenn') }}" class="artist">Glenn S. Luciano</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="main-bg">
+            <div class="banner">
+                <img src="/static/images/cover.png" alt="CodeTunes Banner">
+            </div>
+            <!-- Tabs -->
+            <div class="rectangles-container">
+                <div class="rectangle">All</div>
+                <a href="{{ url_for('homepage') }}"></a><div class="rectangle">Lab Activities</div></a>
+                <a href="{{ url_for('artist_homepage') }}"></a><div class="selected-rectangle">Artists</div></a>
+            </div>
+            <!-- Lab Activities -->
+            <div class="grid-container">
+                <div class="grid-item-1">
+                    <img src="/static/images/Linked List.png" alt="Linked List Logo" class="grid-logo"></img>
+                    <span class="grid-item-text"><a href="{{ url_for('linked_list') }}">Linked List</a></span> 
+                </div>
+                <div class="grid-item-2">
+                    <img src="/static/images/Stack.png" alt="Stack Logo" class="grid-logo">
+                    <span class="grid-item-text"><a href="{{ url_for('stack') }}">Stack</a></span>
+                </div>
+                <div class="grid-item-3">
+                    <img src="/static/images/Queue.png" alt="Queue Logo" class="grid-logo">
+                    <span class="grid-item-text"><a href="  {{ url_for('overall_choose') }}">Queue</a></span>
+                </div>
+                <div class="grid-item-4">
+                    <img src="/static/images/Binary Tree.png" alt="Binary Tree Logo" class="grid-logo">
+                    <span class="grid-item-text"><a href="#">Binary Tree</a></span>
+                </div>
+            </div>
+            <!-- Heading 2 -->
+            <h2 class="section-heading"> MADE FOR CODETUNES </h2>
+            <!-- 1x4 Square Grid -->
+            <div class="square-grid-container">
+                <div class="square-grid-item-1">Graph</div>
+                <div class="square-grid-item-2">Lab Act</div>
+                <div class="square-grid-item-3">Lab Act</div>
+                <div class="square-grid-item-4">Lab Act</div>
+            </div>
+            <!-- Lab Activities-2 -->
+
+
+        </div>
+        <div class="right-sidebar-bg">
+            <div class="right-vertical-container">
+                <div class="right-sidebar-content">
+                    <h2>CODE</h2>
+                </div>
+                <div class="right-sidebar-content-img">
+                    <img src="/static/images/dsa.png" alt="Data Structure Logo" class="right-sidebar-logo">
+                </div>
+                <div class="right-sidebar-content-2">
+                    <h2>TUNES</h2>
+                    <p><b>Artists</b></p>
+                </div>
+                <div class="right-bottom-container">
+                    <div class="right-sidebar-content-3">
+                        <h3> Final Project</h3>
+                    </div>
+                    <div class="right-sidebar-content-img-rectangular">
+                        <img src="/static/images/featured.png" alt="Rectangular Image" class="right-sidebar-logo-rectangular">
+                    </div>
+                    <div class="right-sidebar-content-4">
+                        <h3>Data Structures and Algorithm</h3>
+                        <p> CMPE 201</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar"> 
+        <image class="image-psuedoscode" src="/static/images/pseudoscode.png"></image>
+        <image class="image-section" src="/static/images/section.png"></image>
+        <image class="image-player" src="/static/images/player.png"></image>
+        <image class="image-codetunes" src="/static/images/CodeTunes.png"></image>
+      </div>
+    </div>
+
+</body>
+
+</html>

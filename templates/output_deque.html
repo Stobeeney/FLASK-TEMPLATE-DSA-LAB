@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=en>   
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/static/overall_queue_index.css"/>
+        <link rel="stylesheet" href="/static/overall_queue_output.css"/>
+        <link rel="stylesheet" href="/static/overall_queue_functions.css"/>
+        <title>Output Restricted De-que</title>
+    </head>
+    
+    <body>
+      <a href="{{ url_for('homepage') }}"><image class="home-button" src="/static/images/home button.png"></image></a>
+      <h1 class="deque-simulator-title">De-Que Simulator</h1>
+        <div class="sidebar-bg">
+          <image class="library-image" src="/static/images/library.png"></image>
+          <div class="library-text">Your Library</div>
+
+          <div class="lab-art-container">
+            <div class="selected-lab-art"><a href="#">Lab Activities</a></div>
+            <div class="artists-text"><a href="#">Artists</a></div>
+          </div>
+      
+          <div class="vertical-container">
+            <div class="item">
+                <img class="image" src="/static/images/Linked List.png" alt="Linked List">
+                <a href="{{ url_for('linked_list') }}" class="activity">Linked List</a>
+            </div>
+            <div class="item">
+                <img class="image" src="/static/images/Stack.png" alt="Stack">
+                <a href="{{ url_for('stack') }}" class="activity">Stack</a>
+            </div>
+            <div class="item">
+                <img class="image" src="/static/images/Queue.png" alt="Queue">
+                <a href="{{ url_for('overall_choose') }}" class="selected-activity">Queue</a>
+            </div>
+            <div class="item">
+                <img class="image" src="/static/images/Binary Tree.png" alt="Binary Tree">
+                <a href="#" class="activity">Binary Tree</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="background-output">
+          <div class="output-container">
+              <div class="output-title">Output</div>
+      
+              <div class="output">
+                {% for item in outputrestricted %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+                {% if not outputrestricted %}
+                  <li><em>Queue is empty</em></li>
+                {% endif %}
+              </div>
+          </div>
+      
+          <div class="message-container">
+            {% if message %}
+              <p><strong>{{ message }}</strong></p>
+            {% endif %}
+          </div>
+        </div>
+      
+
+        <div class="background-cover"> 
+          <image class="image-cover" src="/static/images/Output Restricted.png"></image>
+          <image class="deque-image-badge" src="/static/images/verified badge.png"></image>
+          <div class="output-artist-name">De-Que</div>
+          <div class="output-song-name">Output Restricted De-Que</div>
+          <image class="output-image-cover-player" src="/static/images/cover player.png"></image>
+        </div>
+
+        <div class="background-buttons"> 
+          <form method="POST">
+            <div>
+              <input class="deque-textbox" type="text" name="value" id="value" placeholder="TYPE HERE"/>
+            </div>
+            
+            <div class="deque-buttons">
+                <button type="submit" name="action" value="enqueue_at_beginning">ENQUEUE AT FRONT</button>
+                <button type="submit" name="action" value="enqueue_at_end">ENQUEUE AT END</button>
+                <button type="submit" name="action" value="dequeue_at_beginning">DEQUEUE AT FRONT</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sound-bar"> 
+          <image class="image-pseudoscode" src="/static/images/pseudoscode.png"></image>
+          <image class="image-section" src="/static/images/section.png"></image>
+          <image class="image-player" src="/static/images/player.png"></image>
+          <image class="image-codetunes" src="/static/images/CodeTunes.png"></image>
+        </div>
+  </body>
+</html>

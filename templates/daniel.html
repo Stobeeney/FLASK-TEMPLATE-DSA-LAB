@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/static/daniel.css" />
+  <title>Member Daniel</title>
+</head>
+
+<body>
+  <a href="{{ url_for('homepage') }}">
+    <image class="home-button" src="/static/images/home button.png"></image>
+  </a>
+  <h1 class="name">Profile</h1>
+  <div class="sidebar-bg">
+    <image class="library-image" src="/static/images/library.png"></image>
+    <div class="library-text">Your Library</div>
+
+    <div class="lab-art-container">
+      <div class="activities-text"><a href="{{ url_for('homepage') }}">Lab Activities</a></div>
+      <div class="selected-lab-art"><a href="#">Artists</a></div>
+    </div>
+    <div class="left-container">
+      <div class="vertical-container">
+        <div class="item">
+          <img class="image" src="/static/images/daniel.png" alt="Daniel">
+          <a href="{{ url_for('daniel') }}" class="selected-artist">Daniel Reign Cosare</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/april.png" alt="April">
+          <a href="{{ url_for('april') }}" class="artist">April Mae S. Salangsang</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/celine.png" alt="Celine">
+          <a href="{{ url_for('celine') }}" class="artist">Celine Rose S. Paguio</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/jam.png" alt="Jamaica">
+          <a href="{{ url_for('jamaica') }}" class="artist">Jamaica C. Palillo</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/owenn.png" alt="Godwin">
+          <a href="{{ url_for('godwin') }}" class="artist">Godwin Anton M. Mahaba</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/jester.png" alt="Jester">
+          <a href="{{ url_for('jester') }}" class="artist">Jester Carl C. Tiedra</a>
+        </div>
+        <div class="item">
+          <img class="image" src="/static/images/glenn.png" alt="Glenn">
+          <a href="{{ url_for('glenn') }}" class="artist">Glenn S. Luciano</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sound-bar">
+    <image class="image-album" src="/static/images/cosare.png"></image>
+    <image class="image-section" src="/static/images/section.png"></image>
+    <image class="image-player" src="/static/images/player.png"></image>
+    <image class="image-codetunes" src="/static/images/CodeTunes.png"></image>
+  </div>
+
+  <div class="header-container">
+    <image class="image-header" src="/static/images/header.png"></image>
+    <image class="image-play" src="/static/images/play.png"></image>
+    <image class="image-copy" src="/static/images/copy.png"></image>
+    <image class="image-more" src="/static/images/more.png"></image>
+    <div class="header-name">Daniel Reign Cosare</div>
+    <div class="header-course">Computer Engineering Student | Backend Developer</div>
+    <div class="experience">Experience</div>
+  </div>
+  <div class="experience-container">
+    <div class="experiences">
+      <div class="experiences-item">
+        <div class="number">1</div>
+        <image class="picture" src="/static/images/cosare.png"></image>
+        <div class="selected-experience">Philippines Robotics Team</div>
+      </div>
+      <div class="experiences-item">
+        <div class="number">2</div>
+        <image class="picture" src="/static/images/cosare.png"></image>
+        <div class="experience-name">Vice President of Tagaytay Science</div>
+      </div>
+      <div class="experiences-item">
+        <div class="number">3</div>
+        <image class="picture" src="/static/images/cosare.png"></image>
+        <div class="experience-name">Lead for Intrenet of Things in AWS PUP</div>
+      </div>
+    </div>
+  </div>
+  <div class="date-container">
+    <div class="date">
+      <div class="date-item">
+        <div class="time">2018-2025</div>
+        <div class="time">00:00</div>
+        <image class="photo" src="/static/images/more.png"></image>
+      </div>
+      <div class="date-item">
+        <div class="time">2020-2021</div>
+        <div class="time">00:00</div>
+        <image class="photo" src="/static/images/more.png"></image>
+      </div>
+      <div class="date-item">
+        <div class="time">2024-2025</div>
+        <div class="time">00:00</div>
+        <image class="photo" src="/static/images/more.png"></image>
+      </div>
+    </div>
+  </div>
+
+  <div class="album-container">
+    <div class="first-name">Daniel</div>
+    <image class="album" src="/static/images/cosare.png"></image>
+    <div class="surname">Cosare</div>
+    <div class="email">reincosare07@gmail.com</div>
+    <div class="featured-container">
+      <div class="project">Final Project</div>
+      <image class="featured" src="/static/images/featured.png"></image>
+      <div class="subject">Data Structure and Algorithms</div>
+      <div class="subject-code">CMPE 201</div>
+    </div>
+  </div>
+</body>
+
+</html>

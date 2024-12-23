@@ -1,0 +1,172 @@
+.sidebar-bg {
+    position: absolute;
+    width: 415px;
+    height: 750px;
+    top: 107px;
+    left: 33px;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+}   
+
+.background-output {
+    position: absolute;
+    width: 1400px;
+    height: 530px;
+    top: 25px;
+    left: 480px;
+    background-color: #ffa500;
+    border-radius: 28px;
+}
+
+.background-cover {
+    position: absolute;
+    width: 455px;
+    height: 530px;
+    top: 25px;
+    left: 480px;
+    background-color: #ef6700;
+    border-radius: 28px;
+}
+
+.background-buttons {
+    position: absolute;
+    width: 1400px;
+    height: 290px;
+    top: 567px;
+    left: 480px;
+    background-color: #ef6700;
+    border-radius: 28px;
+}
+
+.sound-bar {
+    position: absolute;
+    width: 1940px;
+    height: 125px;
+    top: 875px;
+    left: -25px;
+    background-color: #201b1b;
+}
+
+.image-pseudoscode {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 19px;
+    left: 50px;
+    border-radius: 7px;
+}
+
+.image-section {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+}
+
+.image-player {
+    position: absolute;
+    top: 15px;
+    left: 700px;
+    width: 650px;
+}
+
+.image-codetunes {
+    position: absolute;
+    top: 40px;
+    left: 1650px;
+    width: 250px;
+}
+
+.image-cover {
+    position: absolute;
+    top: 75px;
+    left: 115px;
+    width: 225px;
+    border-radius: 32px;
+}
+
+.queue-image-badge {
+    position: absolute; 
+    top: 320px;
+    left: 160px;
+    width: 35px;
+}
+
+.deque-image-badge {
+    position: absolute; 
+    top: 320px;
+    left: 150px;
+    width: 35px;
+}
+
+.queue-artist-name {
+    position: absolute;
+    top: 325px;
+    left: 200px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.input-artist-name {
+    position: absolute;
+    top: 325px;
+    left: 195px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.output-artist-name {
+    position: absolute;
+    top: 325px;
+    left: 195px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.queue-image-cover-player {
+    position: absolute;
+    top: 405px;
+    left: 85px;
+    width: 290px;
+}
+
+.input-image-cover-player {
+    position: absolute;
+    top: 385px;
+    left: 85px;
+    width: 290px;
+}
+
+.output-image-cover-player {
+    position: absolute;
+    top: 385px;
+    left: 85px;
+    width: 290px;
+}
+
+.input-song-name {
+    position: absolute;
+    top: 460px;
+    left: 50px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 25px;
+    letter-spacing: 1.15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.output-song-name {
+    position: absolute;
+    top: 460px;
+    left: 40px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 25px;
+    letter-spacing: 1.15px;
+    font-weight: 800;
+    color: #fff;
+}

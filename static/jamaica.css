@@ -1,0 +1,462 @@
+html, body {
+    background-color: #000;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}   
+
+/*left side*/
+.sidebar-bg {
+    position: absolute;
+    width: 415px;
+    height: 750px;
+    top: 107px;
+    left: 33px;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+}  
+
+/*bottom rectangle*/
+.sound-bar {
+    position: absolute;
+    width: 1925px;
+    height: 125px;
+    top: 875px;
+    left: -25px;
+    background-color: #201b1b;
+}
+
+.image-album {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 19px;
+    left: 50px;
+    border-radius: 7px;
+}
+
+.image-section {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+}
+
+.image-player {
+    position: absolute;
+    top: 15px;
+    left: 700px;
+    width: 650px;
+}
+
+.image-codetunes {
+    position: absolute;
+    top: 40px;
+    left: 1650px;
+    width: 250px;
+}
+
+/*name beside home*/
+.name {
+    position: absolute;
+    width: 500px;
+    top: 35px;
+    left: 125px;
+    font-family: "chivo-bold", helvetica;
+    font-weight: 700;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 16px;
+}
+
+.home-button {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 29px;
+    left: 33px;
+    background-color: #1f1f1f00;
+    border-radius: 31px;
+}
+
+.library-image  {    
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 23px;
+    height: 23px;
+}
+
+.library-text {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+
+.lab-art-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: flex-start; 
+    align-items: center; 
+    position: absolute; 
+    top: 90px; 
+    left: 50px; 
+}
+
+
+.lab-activities-text a, .activities-text a, .selected-lab-art a {
+    text-decoration: none !important; 
+    color: inherit; 
+}
+
+.selected-lab-art {
+    display: inline-block; 
+    font-family: "chivo-bold", helvetica;
+    font-weight: 700;
+    color: #121212;
+    font-size: 18px;
+    background-color: #f86700;
+    padding: 5px 10px; 
+    border-radius: 45px; 
+    text-align: center; 
+    cursor: pointer;
+}
+
+.lab-activities-text, .activities-text {
+    display: inline-block; 
+    font-family: "chivo-bold", helvetica;
+    font-weight: 700;
+    color: #121212;
+    font-size: 18px;
+    background-color: #ffca1b;
+    padding: 5px 10px; 
+    border-radius: 45px; 
+    text-align: center; 
+    cursor: pointer;
+}
+
+/*member's name*/
+.left-container {
+    position: absolute;
+    top: 150px;
+    width: 405px;
+    height: 596px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.left-container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.left-container::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f; 
+    border-radius: 4px; 
+}
+
+.left-container::-webkit-scrollbar-thumb:hover {
+    background-color: #000; 
+}
+
+.left-container::-webkit-scrollbar-track {
+    background-color: #1f1f1f; 
+}
+
+.vertical-container {
+    position: absolute;
+    left: 15px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 50px; 
+    padding: 20px; 
+}
+
+.item {
+    display: flex; 
+    align-items: center; 
+    gap: 35px; 
+}
+
+.image {
+    width: 70px; 
+    height: auto;
+}
+
+.vertical-container .artist {
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.selected-artist {
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f86700;
+}
+
+/*middle box*/
+.header-container {
+    position: absolute;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    width: 950px;
+    height: 798px;
+    top: 20px;
+    left: 465px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 50px; 
+    padding: 20px; 
+}
+
+.image-header {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 950px;
+    height: 360px;
+    border-radius: 5px;
+}
+
+.header-name {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-course {
+    position: absolute;
+    top: 325px;
+    left: 50px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.image-play {
+    position: absolute;
+    width: 60px;
+    top: 390px;
+    left: 35px;
+}
+
+.image-copy {
+    position: absolute;
+    width: 45px;
+    top: 400px;
+    left: 110px;
+}
+
+.image-more {
+    position: absolute;
+    width: 40px;
+    top: 420px;
+    left: 170px;
+}
+
+.experience {
+    position: absolute;
+    top: 465px;
+    left: 30px;
+    font-family: "chivo-bold", helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.05px;
+    color: #fff;
+}
+
+.experience-container {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    top: 545px;
+    left: 505px;
+}
+
+.experiences {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.experiences-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.picture {
+    width: 75px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.number {
+    font-family: Arial, sans-serif;
+    color:#fff;
+    font-size: 25px;
+    font-weight: regular;
+}
+.experience-container .experience-name {
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.selected-experience {
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f86700;
+    text-align: center;
+}
+
+.date-container {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 573px;
+    left: 1130px;
+}
+
+.date {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 76px;
+}
+
+.date-item {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.time {
+    text-decoration: none; 
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.album-container {
+    position: absolute;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+    width: 364px;
+    height: 798px;
+    top: 20px;
+    left: 1474px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 50px; 
+    padding: 20px;
+}
+
+.first-name {
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f86700;
+    text-align: center;
+}
+
+.album {
+    position: absolute;
+    border-radius: 10px;
+    top: 60px;
+    width: 365px;
+}
+
+.surname {
+    position: absolute;
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 35px;
+    font-weight: bold;
+    color: #f86700;
+    top: 450px;
+}
+
+.email {
+    position: absolute;
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 25px;
+    color: #fff;
+    top: 500px;
+}
+
+.featured-container {
+    background-color: #5c5959;
+    position: absolute;
+    width: 365px;
+    height: 270px;
+    border-radius: 10px;
+    top: 550px;
+}
+
+.project {
+    position: absolute;
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 23px;
+    color: #fff;
+    top: 13px;
+    left: 18px;
+}
+
+.featured {
+    position: absolute;
+    border-radius: 10px;
+    top: 50px;
+    left: 17px;
+    width: 330px;
+    height: 150px;
+}
+
+.subject {
+    position: absolute;
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    top: 210px;
+    left: 18px;
+}
+
+.subject-code {
+    position: absolute;
+    text-decoration: none; 
+    font-family: "chivo", Helvetica;
+    font-size: 20px;
+    color: #fff;
+    top: 235px;
+    left: 18px;
+}

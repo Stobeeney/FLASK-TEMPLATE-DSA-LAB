@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=en>   
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/overall_choose.css" />
+        <title>Queue Homepage</title>
+    </head>
+
+    <body>
+        <a href="{{ url_for('queue_operations') }}"><div class="black-container">
+            <div class="queue-container">
+                <image class="image-logo" src="/static/images/queue logo.png"></image>                    
+                <image class="image-qr" src="/static/images/queue qr.png"></image>
+                <div class="activity-name">Queue</div>
+            </div>
+        </div></a>
+        <a href="{{ url_for('deque_choose') }}"><div class="black-container-2">
+            <div class="deque-container">
+                <image class="image-logo-2" src="/static/images/deque logo.png"></image>                    
+                <image class="image-qr" src="/static/images/deque qr.png"></image>
+                <div class="activity-name-2">De-Que</div>
+            </div>
+        </div></a>
+    </body>
+</html>
